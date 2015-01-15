@@ -1,0 +1,23 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "WPScore\\": "wp-content/wp-score"
+        }
+    },
+    "scripts": {
+        "pre-install-cmd": "WPScore\\Script::preInstall"
+    },
+    "config": {
+        "vendor-dir": "wp-content/vendor"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
